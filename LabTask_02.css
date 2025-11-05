@@ -90,7 +90,7 @@ input:focus, select:focus {
     box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
 }
 
-@media (max-width: 400px0) {
+@media (max-width: 400px) {
     form {
         width: 90%;
     }

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Form</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="LabTask_03.css">
+</head>
+
+<body>
+  <form action="/donate" method="POST">
+    <h2>Donor Information</h2>
+
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="firstname" required>
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" required>
+
+    <label for="company">Company:</label>
+    <input type="text" id="company" name="company">
+
+    <label for="address1">Address 1:</label>
+    <input type="text" id="address1" name="address1" required>
+
+    <label for="address2">Address 2:</label>
+    <input type="text" id="address2" name="address2">
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required>
+
+    <label for="state">State:</label>
+    <select id="state" name="state" required>
+      <option value="">Select a State</option>
+      <option value="California">California</option>
+      <option value="New York">New York</option>
+      <option value="Texas">Texas</option>
+      <option value="Ohio">Ohio</option>
+      <option value="Washington">Washington</option>
+    </select>
+
+    <label for="zipcode">Zip Code:</label>
+    <input type="text" id="zipcode" name="zipcode" required>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="Bangladesh">Bangladesh</option>
+      <option value="USA">USA</option>
+      <option value="India">India</option>
+      <option value="UK">UK</option>
+    </select>
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone">
+
+    <label for="fax">Fax:</label>
+    <input type="text" id="fax" name="fax">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label>Donation Amount:</label>
+    <div class="donation-group">
+      <input type="radio" id="none" name="donation" value="None" required>
+      <label for="none">None</label>
+
+      <input type="radio" id="don50" name="donation" value="50">
+      <label for="don50">$50</label>
+
+      <input type="radio" id="don75" name="donation" value="75">
+      <label for="don75">$75</label>
+
+      <input type="radio" id="don100" name="donation" value="100">
+      <label for="don100">$100</label>
+
+      <input type="radio" id="don250" name="donation" value="250">
+      <label for="don250">$250</label>
+
+      <input type="radio" id="other" name="donation" value="Other">
+      <label for="other">Other</label>
+    </div>
+
+    <label for="otherAmount">Other Amount ($):</label>
+    <input type="number" id="otherAmount" name="otherAmount" min="10">
+
+    <label class="terms">
+      <input type="checkbox" id="recurring" name="recurring">
+      I am interested in giving on a regular basis.
+    </label>
+
+    <h2>Honorarium and Memorial Donation Information</h2>
+
+    <label>I would like to make this donation:</label>
+    <div class="donation-group">
+      <input type="radio" id="tohonor" name="honorType" value="To Honor">
+      <label for="tohonor">To Honor</label>
+
+      <input type="radio" id="inmemory" name="honorType" value="In Memory of">
+      <label for="inmemory">In Memory of</label>
+    </div>
+
+    <label for="honorname">Name:</label>
+    <input type="text" id="honorname" name="honorname">
+
+    <label for="ackdonation">Acknowledge Donation To:</label>
+    <input type="text" id="ackdonation" name="ackdonation">
+
+    <label for="ackaddress">Address:</label>
+    <input type="text" id="ackaddress" name="ackaddress">
+
+    <label for="ackcity">City:</label>
+    <input type="text" id="ackcity" name="ackcity">
+
+    <label for="ackstate">State:</label>
+    <select id="ackstate" name="ackstate">
+      <option value="">Select a State</option>
+      <option value="California">California</option>
+      <option value="New York">New York</option>
+      <option value="Texas">Texas</option>
+      <option value="Ohio">Ohio</option>
+      <option value="Washington">Washington</option>
+    </select>
+
+    <label for="ackzip">Zip:</label>
+    <input type="text" id="ackzip" name="ackzip">
+
+    <h2>Additional Information</h2>
+
+    <p>Please enter your name, company, or organization as you would like it to appear in our publications:</p>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label class="terms">
+      <input type="checkbox" name="anonymous"> I would like my gift to remain anonymous.
+    </label>
+
+    <label class="terms">
+      <input type="checkbox" name="matchingGift"> My employer offers a matching gift program. I will mail the matching gift form.
+    </label>
+
+    <label class="terms">
+      <input type="checkbox" name="noMail"> Please save the cost of acknowledging this gift by not mailing a thank-you letter.
+    </label>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" placeholder="Please type any questions or feedback here"></textarea>
+
+    <h3>How may we contact you?</h3>
+    <label class="terms"><input type="checkbox" name="contact" value="email"> E-mail</label>
+    <label class="terms"><input type="checkbox" name="contact" value="postalmail"> Postal Mail</label>
+    <label class="terms"><input type="checkbox" name="contact" value="telephone"> Telephone</label>
+    <label class="terms"><input type="checkbox" name="contact" value="fax"> Fax</label>
+
+    <h3>I would like to receive newsletters and special event information by:</h3>
+    <label class="terms"><input type="checkbox" name="newsletter" value="email"> E-mail</label>
+    <label class="terms"><input type="checkbox" name="newsletter" value="postalmail"> Postal Mail</label>
+
+    <label class="terms">
+      <input type="checkbox" name="volunteer"> I would like information about volunteering with the organization.
+    </label>
+
+    <div class="buttons">
+      <button type="reset">Reset</button>
+      <button type="submit">Continue</button>
+    </div>
+
+    <p>Donate online with confidence. You are on a secure server.</p>
+    <p>If you have any problems or questions, please contact support.</p>
+  </form>
+</body>
+</html>
+
+
+
+    
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
