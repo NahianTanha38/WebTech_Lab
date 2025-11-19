@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>University Admission Form</title>
+    <meta name="author" content="University Admissions">
+    <meta name="description" content="Online admission form for new students collecting personal and academic details and documents.">
+    <meta name="keywords" content="admission, university, form, application">
+</head>
+<body>
+
+<header>
+    <h1>University Admission Form</h1>
+</header>
+
+<main>
+    <!-- Form container -->
+    <form action="#" method="post" enctype="multipart/form-data">
+        
+        <!-- Personal Info -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="firstName">First Name<span>*</span>:</label><br>
+            <input type="text" id="firstName" name="firstName" maxlength="30" required><br><br>
+
+            <label for="lastName">Last Name<span>*</span>:</label><br>
+            <input type="text" id="lastName" name="lastName" maxlength="30" required><br><br>
+
+            <label for="email">Email Address<span>*</span>:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone" maxlength="15"><br><br>
+
+            <label for="dob">Date of Birth<span>*</span>:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <p>Gender<span>*</span>:</p>
+            <input type="radio" id="genderMale" name="gender" value="Male" required>
+            <label for="genderMale">Male</label><br>
+
+            <input type="radio" id="genderFemale" name="gender" value="Female" required>
+            <label for="genderFemale">Female</label><br>
+
+            <input type="radio" id="genderOther" name="gender" value="Other" required>
+            <label for="genderOther">Other</label><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Academic Info -->
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="sscGpa">SSC / Equivalent GPA<span>*</span>:</label><br>
+            <input type="text" id="sscGpa" name="sscGpa" maxlength="5" required><br><br>
+
+            <label for="hscGpa">HSC / Equivalent GPA<span>*</span>:</label><br>
+            <input type="text" id="hscGpa" name="hscGpa" maxlength="5" required><br><br>
+
+            <label for="graduationYear">Year of Last Qualification:</label><br>
+            <input type="number" id="graduationYear" name="graduationYear" min="1900" max="2100"><br><br>
+
+            <label for="preferredCourse">Preferred Department / Course<span>*</span>:</label><br>
+            <select id="preferredCourse" name="preferredCourse" required>
+                <option value="">-- Select Course --</option>
+                <option value="CSE">Computer Science & Engineering (CSE)</option>
+                <option value="EEE">Electrical & Electronic Engineering (EEE)</option>
+                <option value="BBA">Bachelor of Business Administration (BBA)</option>
+                <option value="English">English</option>
+                <option value="Architecture">Architecture</option>
+            </select><br><br>
+
+            <p>Areas of Interest (select any):</p>
+            <input type="checkbox" id="interestResearch" name="interests[]" value="Research">
+            <label for="interestResearch">Research</label><br>
+
+            <input type="checkbox" id="interestSports" name="interests[]" value="Sports">
+            <label for="interestSports">Sports</label><br>
+
+            <input type="checkbox" id="interestArts" name="interests[]" value="Arts">
+            <label for="interestArts">Arts</label><br>
+
+            <input type="checkbox" id="interestTech" name="interests[]" value="Technology">
+            <label for="interestTech">Technology</label><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Documents Section -->
+        <fieldset>
+            <legend>Required Documents</legend>
+
+            <label for="photo">Passport Size Photo<span>*</span>:</label><br>
+            <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+            <label for="transcript">Academic Transcript (PDF)<span>*</span>:</label><br>
+            <input type="file" id="transcript" name="transcript" accept=".pdf" required><br><br>
+
+            <label for="resume">Resume / CV (optional):</label><br>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Personal Statement -->
+        <fieldset>
+            <legend>Personal Statement</legend>
+
+            <label for="statement">Short Statement (max 500 chars):</label><br>
+            <textarea id="statement" name="statement" maxlength="500" rows="6" placeholder="Why do you want to join this university?"></textarea><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- Form actions -->
+        <button type="submit">Submit Application</button>
+        <button type="reset">Reset Form</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 University Admissions. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
