@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* --- General Reset --- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        /* --- Header --- */
+        header {
+            text-align: center;
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        /* --- Profile Section --- */
+        .profile-box {
+            width: 50%;
+            background: #ffffff;
+            margin: auto;                   /* centers the box */
+            padding: 20px;                  /* padding (box model) */
+            border: 2px solid #cccccc;      /* border */
+            border-radius: 10px;
+            margin-bottom: 30px;            /* margin separation */
+        }
+
+        /* --- Student Image --- */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;             /* round image */
+            display: block;
+            margin: 0 auto;                 /* center image */
+        }
+
+        /* --- Text Styling --- */
+        .student-name {
+            text-align: center;
+            font-size: 1.8em;               /* using em */
+            margin-top: 15px;
+        }
+
+        .dept, .id, .bio {
+            text-align: center;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Profile Page</h1>
+    </header>
+
+    <section class="profile-box">
+        <img src="profile.jpg" alt="Student Photo" class="profile-img">
+
+        <h2 class="student-name">Nahian Tanha</h2>
+        <p class="dept">Department of CSE</p>
+        <p class="id">Student ID: 23-53016-3</p>
+
+        <p class="bio">
+            I’m Tanha, exploring programming, problem-solving, and new tech. 
+            Passionate about AI & Machine Learning and always eager to learn new things.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Department of CSE</p>
+    </footer>
+
+</body>
+</html>
